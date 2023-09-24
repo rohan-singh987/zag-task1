@@ -1,5 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project
 
+# Task 1
+[HostedLink](https://zag-task1.vercel.app/)
+
 ## Installation
 To set up this project on your local machine, follow these steps:
 
