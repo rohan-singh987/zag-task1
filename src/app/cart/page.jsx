@@ -16,9 +16,12 @@ import {
 
 const Cart = () => {
 
-    const dispatch = useDispatch();
-    const { cart, totalQuantity, totalPrice } = useSelector((state) => state.cart);
 
+    // Getting data from redux store
+    const dispatch = useDispatch();
+    const { cart, totalPrice } = useSelector((state) => state.cart);
+
+    // Handling change in Total Price of cart on additon of new item
     useEffect(() => {
       dispatch(getCartTotal());
     }, [cart]);

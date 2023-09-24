@@ -9,6 +9,7 @@ import { useRouter } from 'next/navigation';
 
 const Discover = () => {
 
+  // Fetching data from redux store
   const productItem = useSelector((state) => state.product)
 
   const naviagte = useRouter()
