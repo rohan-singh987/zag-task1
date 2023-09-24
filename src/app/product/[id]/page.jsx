@@ -30,7 +30,7 @@ const ProductPage = ({ params }) => {
 
 			<div className='flex lg:flex-row flex-col sm:justify-evenly sm:mt-8 mt-5 '>
 				<div className='relative'>
-					<Image src={fetchedData.img} className='sm:w-96 w-80  mx-auto relative' alt='' />
+					<Image src={fetchedData?.img} className='sm:w-96 w-80  mx-auto relative' alt='' />
 					<div className=''>
                     <Image src={heart} className='rounded-lg z-10 top-3 right-4 bg-white w-10 p-2 absolute hover:bg-red-500 cursor-pointer' 
                       onClick={()=>{}}
@@ -40,7 +40,7 @@ const ProductPage = ({ params }) => {
 
 				<div className='flex flex-col lg:ms-8 ms-0'>
 					<h2 className='sm:text-4xl text-3xl sm:font-bold sm:mt-10 mt-5 sm:mb-3 mb-3'>
-						{fetchedData.title}
+						{fetchedData?.title}
 					</h2>
 					<div className='flex items-center mb-5'>
 						<Image src={rating} className='sm:w-8 w-6' alt='' />
@@ -49,7 +49,7 @@ const ProductPage = ({ params }) => {
 						</p>
 					</div>
 					<p className=' text-black opacity-60 mb-5 text-md sm:w-3/4 '>
-						{fetchedData.desc}
+						{fetchedData?.desc}
 					</p>
 					<div className='flex flex-col'>
 						<h3 className='text-2xl'>Choose Size</h3>
@@ -75,7 +75,7 @@ const ProductPage = ({ params }) => {
 			</div>
 
 			<div>
-				<ProductFooter price={fetchedData.price} />
+				<ProductFooter price={fetchedData?.price} />
 			</div>
 		</div>
 	)
