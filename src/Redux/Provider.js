@@ -5,6 +5,8 @@ import { Provider } from 'react-redux';
 
 const Prvider = ({ children }) => {
   return (
+    
+    // Wraping up Application under redux-state using Provider
     <Provider store={store}>
         {children}
     </Provider>

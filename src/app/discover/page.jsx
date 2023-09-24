@@ -36,7 +36,14 @@ const Discover = () => {
                   {product.title}
                 </h2>
                 <p className='text-sm opacity-60 sm:text-base'>
+                  INR
+                  <span className='ms-1'>
                   {product.price}
+                  </span>
+
+                  <span className='mx-2'>
+                  {product.discount && product.discount}
+                  </span>
                 </p>
               </div>
             )

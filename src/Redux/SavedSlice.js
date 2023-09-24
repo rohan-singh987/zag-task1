@@ -2,6 +2,7 @@
 
 import { createSlice } from "@reduxjs/toolkit";
 
+// Creating Saved Slice to manage Saved-Product related state at global level
 const savedSlice = createSlice({
     name: "saved",
     initialState: [],
