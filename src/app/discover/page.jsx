@@ -28,7 +28,7 @@ const Discover = () => {
                   <Image src={product.img} className='rounded-lg relative w-' alt='' />
                   <div className=''>
                     <Image src={heart} className='rounded-lg z-10 top-3 right-4 bg-white w-10 p-2 absolute hover:bg-red-500 cursor-pointer' 
-                      onClick={console.log("hello")}
+                      onClick={()=>{}}
                     alt='' />
                   </div>
                 </div>
