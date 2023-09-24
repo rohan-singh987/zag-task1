@@ -10,12 +10,12 @@ import { utils } from '@/utils';
 
 const ProductPage = ({ params }) => {
 
-	const dispatch = useDispatch();
+	// Managing States
 	const items = useSelector((state) => state.cart.items);
 	const [fetchedData, setFetchedData] = useState({});
 	const [size, setSize] = useState("");
 
-	
+	// Checking for the requested item detail from redux store
 	useEffect(() => {
 		let objData = items.find((obj) => obj.id == params.id);
 		if (objData) {
