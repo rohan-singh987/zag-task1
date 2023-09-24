@@ -12,45 +12,55 @@ const initialState = [
     img: t1,
     title: "Regular fit slogan",
     desc: "The name says it all, The right size slightly snugs the body leaving enough room for comfort in the sleeves and waist.",
-    price: "INR 1,190",
+    price: 1190,
+    quantity: 1,
+
   },
   {
     id: 2,
     img: t2,
     title: "Regular fit polo",
     desc: "The name says it all, The right size slightly snugs the body leaving enough room for comfort in the sleeves and waist.",
-    price: "INR 1,100  -52%",
+    price: 1100,
+    discount: "-52%",
+    quantity: 1,
+
   },
   {
     id: 3,
     img: t3,
     title: "Regular fit  block",
     desc: "The name says it all, The right size slightly snugs the body leaving enough room for comfort in the sleeves and waist.",
-    price: "INR 1,690",
+    price: 1690,
+    quantity: 1,
   },
   {
     id: 4,
     img: t4,
     title: "Regular fit v-neck",
     desc: "The name says it all, The right size slightly snugs the body leaving enough room for comfort in the sleeves and waist.",
-    price: "INR 1,290",
+    price: 1290,
+    quantity: 1,
   },
   {
     id: 5,
     img: t5,
     title: "Regular fit slogan",
     desc: "The name says it all, The right size slightly snugs the body leaving enough room for comfort in the sleeves and waist.",
-    price: "INR 1,190",
+    price: 1190,
+    quantity: 1,
   },
   {
     id: 6,
     img: t6,
     title: "Regular fit slogan",
     desc: "The name says it all, The right size slightly snugs the body leaving enough room for comfort in the sleeves and waist.",
-    price: "INR 1,190",
+    price: 1190,
+    quantity: 1,
   },
 ];
 
+// Creating Product Slice to manage Product state at global level
 const productSlice = createSlice({
   name: "product",
   initialState,

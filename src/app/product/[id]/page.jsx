@@ -6,23 +6,24 @@ import rating from '../../../../public/starRating.svg'
 import heart from '../../../../public/productHeart.svg'
 import { useDispatch, useSelector } from 'react-redux';
 import ProductFooter from '@/components/ProductFooter';
+import { utils } from '@/utils';
 
 const ProductPage = ({ params }) => {
 
 	const dispatch = useDispatch();
-	const productItem = useSelector((state) => state.product);
+	const items = useSelector((state) => state.cart.items);
 	const [fetchedData, setFetchedData] = useState({});
 	const [size, setSize] = useState("");
 
-	console.log(productItem);
-
+	
 	useEffect(() => {
-		let objData = productItem.find((obj) => obj.id == params.id);
+		let objData = items.find((obj) => obj.id == params.id);
 		if (objData) {
 			setFetchedData(objData);
 		}
 		console.log(objData);
 	}, [params]);
+	
 
 	return (
 		<div className='text-black sm:px-10 px-5 pt-10 pb-48 min-h-screen bg-white'>
@@ -75,7 +76,7 @@ const ProductPage = ({ params }) => {
 			</div>
 
 			<div>
-				<ProductFooter price={fetchedData?.price} />
+				<ProductFooter price={fetchedData?.price} data={fetchedData} />
 			</div>
 		</div>
 	)
