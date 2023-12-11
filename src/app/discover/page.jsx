@@ -23,6 +23,7 @@ const Discover = () => {
           productItem.map((product) => {
             return (
               <div key={product.id} className='mx-auto hover:scale-110 transition-transform '
+              id={product.id}
                 onClick={() => naviagte.push(`/product/${product.id}`)}
               >
                 <div className='mx-auto relative'>
