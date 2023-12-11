@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project
 
-# Task 1
+# ZagEcom
 [HostedLink](https://zag-task1.vercel.app/)
 
 ## Installation
