@@ -11,9 +11,9 @@ const DiscoverHeader = () => {
     const [active, setActive] = useState("all")
 
     return (
-        <div className='sticky bg-white top-0 pb-5 z-20'>
+        <div id="discoverHeader" className='sticky bg-white top-0 pb-5 z-20'>
             <div className='flex justify-between items-center'>
-                <h1 className=' text-3xl font-semibold '>
+                <h1 data-testid="headerTest" className=' text-3xl font-semibold '>
                     Discover
                 </h1>
                 <button>

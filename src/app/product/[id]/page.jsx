@@ -55,17 +55,17 @@ const ProductPage = ({ params }) => {
 					<div className='flex flex-col'>
 						<h3 className='text-2xl'>Choose Size</h3>
 						<div className='mt-3'>
-							<button className={size == 's' ? `bg-black text-white border cursor-pointer border-slate-400 text-xl px-5 rounded-lg py-2 me-4` : ` border border-slate-400 text-xl px-5 rounded-lg py-2 me-4 cursor-pointer hover:bg-black hover:text-white transition-colors`}
+							<button id='sizeSTest' className={size == 's' ? `bg-black text-white border cursor-pointer border-slate-400 text-xl px-5 rounded-lg py-2 me-4` : ` border border-slate-400 text-xl px-5 rounded-lg py-2 me-4 cursor-pointer hover:bg-black hover:text-white transition-colors`}
 								onClick={() => setSize('s')}
 							>
 								S
 							</button>
-							<button className={size == 'm' ? `bg-black text-white border cursor-pointer border-slate-400 text-xl px-5 rounded-lg py-2 me-4` : ` border border-slate-400 text-xl px-5 rounded-lg py-2 me-4 cursor-pointer hover:bg-black hover:text-white transition-colors`}
+							<button id='sizeMTest' className={size == 'm' ? `bg-black text-white border cursor-pointer border-slate-400 text-xl px-5 rounded-lg py-2 me-4` : ` border border-slate-400 text-xl px-5 rounded-lg py-2 me-4 cursor-pointer hover:bg-black hover:text-white transition-colors`}
 								onClick={() => setSize('m')}
 							>
 								M
 							</button>
-							<button className={size == 'l' ? `bg-black text-white border cursor-pointer border-slate-400 text-xl px-5 rounded-lg py-2 me-4` : ` border border-slate-400 text-xl px-5 rounded-lg py-2 me-4 cursor-pointer hover:bg-black hover:text-white transition-colors`}
+							<button id='sizeLTest' className={size == 'l' ? `bg-black text-white border cursor-pointer border-slate-400 text-xl px-5 rounded-lg py-2 me-4` : ` border border-slate-400 text-xl px-5 rounded-lg py-2 me-4 cursor-pointer hover:bg-black hover:text-white transition-colors`}
 								onClick={() => setSize('l')}
 							>
 								L

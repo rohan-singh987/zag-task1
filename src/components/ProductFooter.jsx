@@ -26,7 +26,7 @@ const ProductFooter = ({ price, data }) => {
                     </span>
                 </div>
             </div>
-            <button className='flex items-center bg-black text-white py-5 px-12 rounded-xl hover:scale-110 transition-transform'
+            <button className='addToCartTest flex items-center bg-black text-white py-5 px-12 rounded-xl hover:scale-110 transition-transform'
                 onClick={() => addItemCart(data)}
             >
                 <Image src={bag} alt='' />
