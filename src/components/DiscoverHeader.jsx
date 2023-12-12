@@ -31,23 +31,23 @@ const DiscoverHeader = () => {
                 </div>
             </div>
 
-            <div className='flex justify-center mt-5 overflow-auto'>
+            <div data-testid="categoryTest" className='flex justify-center mt-5 overflow-auto'>
                 <div className={active != "all" ?`bg-[#F2F2F2] cursor-pointer hover:bg-black hover:text-white transition-colors py-2 px-5 sm:mx-5 mx-3 ms-20 sm:ms-0 rounded-lg` : `bg-black text-white py-2 px-5 sm:mx-5 mx-3 ms-20 sm:ms-0 rounded-lg`}
                     onClick={() => setActive("all")}
                 >
                     All
                 </div>
-                <div className={active != "men" ?`bg-[#F2F2F2] cursor-pointer hover:bg-black hover:text-white transition-colors py-2 px-5 sm:mx-5 mx-3  rounded-lg` : `bg-black text-white py-2 px-5 sm:mx-5 mx-3 rounded-lg`}
+                <div key="m" className={active != "men" ?`bg-[#F2F2F2] cursor-pointer hover:bg-black hover:text-white transition-colors py-2 px-5 sm:mx-5 mx-3  rounded-lg` : `bg-black text-white py-2 px-5 sm:mx-5 mx-3 rounded-lg`}
                     onClick={() => setActive("men")}
                 >
                     Men
                 </div>
-                <div className={active != "women" ?`bg-[#F2F2F2] cursor-pointer hover:bg-black hover:text-white transition-colors py-2 px-5 sm:mx-5 mx-3  rounded-lg` : `bg-black text-white py-2 px-5 sm:mx-5 mx-3 rounded-lg`}
+                <div key="m" className={active != "women" ?`bg-[#F2F2F2] cursor-pointer hover:bg-black hover:text-white transition-colors py-2 px-5 sm:mx-5 mx-3  rounded-lg` : `bg-black text-white py-2 px-5 sm:mx-5 mx-3 rounded-lg`}
                     onClick={() => setActive("women")}
                     >
                     Women
                 </div>
-                <div className={active != "kids" ?`bg-[#F2F2F2] cursor-pointer hover:bg-black hover:text-white transition-colors py-2 px-5 sm:mx-5 mx-3  rounded-lg` : `bg-black text-white py-2 px-5 sm:mx-5 mx-3 rounded-lg`}
+                <div key="m" className={active != "kids" ?`bg-[#F2F2F2] cursor-pointer hover:bg-black hover:text-white transition-colors py-2 px-5 sm:mx-5 mx-3  rounded-lg` : `bg-black text-white py-2 px-5 sm:mx-5 mx-3 rounded-lg`}
                     onClick={() => setActive("kids")}
                     >
                     Kids
